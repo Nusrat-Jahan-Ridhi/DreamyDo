@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamyDo</title>
+  <link rel="stylesheet" href="/styles/style.css"/>
+</head>
+<body>
+  <div class="welcome-container">
+    <div class="cloud-animation">
+      <img src="cartoon-cloud.png" alt="Cute Cartoon" class="cartoon"/>
+      <h1>Welcome to DreamyDo!</h1>
+      <p>Your dreamy to-do buddy 🌸</p>
+      <button onclick="requireLogin()">Start Planning</button>
+    </div>
+  </div>
+
+   <!-- Login/Register Modal 
+   <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Login or Register</h2>
+      <div class="buttons">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+      </div>
+    </div>
+  </div>  -->
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>💖 Welcome!</h2>
+      <p>Please login or register to start planning</p>
+      <div class="modal-buttons">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+      </div>
+      <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+  </div>
+  
+
+  <script src="/scripts/index.js"></script>
+  
+</body>
+</html>

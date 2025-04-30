@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotton Candy Calendar</title>
+  <link rel="stylesheet" href="/styles/calendar.css">
+</head>
+<body>
+  <header>
+    <h1>🎀 Cotton Candy Calendar 🎀</h1>
+    <select id="themeSelector">
+      <option value="pink">🍓 Strawberry Pink</option>
+      <option value="blue">🫐 Blueberry Blue</option>
+      <option value="purple">🍇 Grape Purple</option>
+    </select>
+  </header>
+
+  <main>
+    <div id="calendar" class="calendar"></div>
+  </main>
+
+  <!-- Reminder Modal -->
+  <div id="reminderModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Add Reminder for <span id="selectedDate"></span></h2>
+      <textarea id="reminderText" placeholder="Write something cute... 💖"></textarea>
+      <button id="saveReminder">Save ✨</button>
+    </div>
+  </div>
+
+
+  <script src="/scripts/calendar.js"></script>
+</body>
+</html>
+
